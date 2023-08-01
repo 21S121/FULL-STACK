@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Element color change </title>
+    <script>
+      function changetextColor(){
+        let labelElement = document.getElementById('label');
+
+        labelElement.style.color = 'crimson';
+      }
+    </script>
+  </head>
+  <body id="label">
+	  <fieldset style="background-color:aqua;" >
+    <form action="personal" method="post">
+<table>
+<tr>
+<td>Name</td>
+<td><input type="text" name="uname"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="email" name="uemail"></td>
+</tr>
+<tr>
+<td>Phone</td>
+<td><input type="number" name="uphone"></td>
+</tr>
+<tr>
+<td>DOB</td>
+<td><input type="date" name="Udob"></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female
+</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>
+<input type="checkbox" name="lang" value="Java">Java
+<input type="checkbox" name="lang" value="C">C
+<input type="checkbox" name="lang" value="PhP">PhP
+</td>
+</tr>
+<tr>
+<td>Company</td>
+<td>
+<select name="company">
+<option value="TCS">TCS</option>
+<option value="Wipro">Wipro</option>
+<option value="CTS">CTS</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><input type="submit" value="send"></td>
+<td><input type=reset value="clear"></td>
+</tr>
+</table>
+</form>
+</fieldset>
+    <button onclick="changetextColor();">
+     Button to change color
+    </button>
+  </body>
+</html>
